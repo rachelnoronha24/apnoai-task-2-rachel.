@@ -90,17 +90,7 @@
                 className="w-32 h-32 rounded-full object-cover border-4 border-white/30 shadow-lg"
               />
             </div>
-            
-{/* Like Button */}
-<div className="text-center mt-4">
-  <button
-    onClick={() => setLikes(likes + 1)}
-    className="px-6 py-2 rounded-full bg-pink-500 text-white font-semibold hover:bg-pink-600 transition"
-  >
-    ❤️ Like {likes}
-  </button>
-</div>
-```
+          
 
 
             {/* Name and Role */}
@@ -147,6 +137,15 @@
             >
               {isConnected ? '✓ Connected' : 'Connect'}
             </button>
+            <div className="text-center mt-4 mb-6">
+  <button
+    onClick={() => setLikes(likes + 1)}
+    className="px-6 py-2 rounded-full bg-pink-500 text-white font-semibold hover:bg-pink-600 transition"
+  >
+    ❤️ Like {likes}
+  </button>
+</div>
+
 
             {/* Social Links */}
             <div className="flex justify-center gap-4">
